@@ -4,5 +4,5 @@ Team Members: Daniel, Diana, Lailah, Zahra
 
 ## Project Proposal
 
-[Proposal](Project_4_Proposal.pdf)
+[Proposal](Project 4 Proposal.pdf)
 

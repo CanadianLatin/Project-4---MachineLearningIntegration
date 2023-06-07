@@ -1,0 +1,33 @@
+
+CREATE TABLE IF NOT EXISTS "ny_info_two" (
+date date,
+ADPT float,
+ASLP float,
+ASTP float,
+AWBT float,
+AWND float,
+CDSD float,
+CLDD float,
+DP01 float,
+DP10 float,
+DP1X float,
+DSND float,
+DSNW float,
+DT00 float,
+DT32 float,
+DX32 float,
+DX70 float,
+DX90 float,
+DYFG float,
+DYHF float,
+DYNT float,
+DYSD float,
+DYSN float,
+DYTS float,
+DYXP float,
+DYXT float,
+EMNT float,
+EMSD float,
+EMSN float);
+
+

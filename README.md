@@ -4,5 +4,5 @@ Team Members: Daniel, Diana, Lailah, Zahra
 
 ## Project Proposal
 
-[Proposal](project_4_Proposal.pdf)
+[Proposal](/project_4_Proposal.pdf)
 

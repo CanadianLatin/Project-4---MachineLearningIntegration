@@ -7,7 +7,7 @@ Team Members: Daniel, Diana, Lailah, Zahra
 [Proposal](/project_4_Proposal.pdf)
 
 
-#Files:
+# Files:
 
 * api_data_load.ipynb 
     * API call to noaa for DATE, PRCP, TAVG,AWND,TMIN,TMAX [See Variables Dictionary] (/Resourses/GSOM_documentation.pdf):

@@ -302,11 +302,17 @@
             <datasource caption='ny_info (noaa_db)' name='federated.0t56nvb1r301la192q29l14fsxf9' />
           </datasources>
           <datasource-dependencies datasource='federated.0t56nvb1r301la192q29l14fsxf9'>
-            <column caption='Average Wind Speed Milles H' datatype='real' name='[average_wind_speed_milles_h]' role='measure' type='quantitative' />
-            <column caption='Precipitation' datatype='real' name='[precipitation]' role='measure' type='quantitative' />
-            <column-instance column='[average_wind_speed_milles_h]' derivation='Sum' name='[sum:average_wind_speed_milles_h:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[precipitation]' derivation='Sum' name='[sum:precipitation:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[temperature_average]' derivation='Sum' name='[sum:temperature_average:qk]' pivot='key' type='quantitative' />
+            <column caption='Temperature Average' datatype='real' name='[temperature_average]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t56nvb1r301la192q29l14fsxf9].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t56nvb1r301la192q29l14fsxf9].[sum:temperature_average:qk]&quot;' user:op='manual' />
+          </filter>
+          <slices>
+            <column>[federated.0t56nvb1r301la192q29l14fsxf9].[:Measure Names]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style />
@@ -316,10 +322,19 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0t56nvb1r301la192q29l14fsxf9].[sum:temperature_average:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows>[federated.0t56nvb1r301la192q29l14fsxf9].[sum:average_wind_speed_milles_h:qk]</rows>
-        <cols>[federated.0t56nvb1r301la192q29l14fsxf9].[sum:precipitation:qk]</cols>
+        <rows>[federated.0t56nvb1r301la192q29l14fsxf9].[Multiple Values]</rows>
+        <cols>[federated.0t56nvb1r301la192q29l14fsxf9].[tyr:date:qk]</cols>
       </table>
       <simple-id uuid='{345A8E9E-171E-4808-AC30-17E93F70F6AC}' />
     </worksheet>
@@ -368,6 +383,7 @@
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
+            <card type='measures' />
           </strip>
         </edge>
         <edge name='top'>

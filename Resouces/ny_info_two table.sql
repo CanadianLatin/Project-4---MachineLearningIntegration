@@ -29,5 +29,3 @@ DYXT float,
 EMNT float,
 EMSD float,
 EMSN float);
-
-

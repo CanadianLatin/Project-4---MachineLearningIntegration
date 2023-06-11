@@ -302,39 +302,53 @@
             <datasource caption='ny_info (noaa_db)' name='federated.0t56nvb1r301la192q29l14fsxf9' />
           </datasources>
           <datasource-dependencies datasource='federated.0t56nvb1r301la192q29l14fsxf9'>
+            <column-instance column='[temperature_average]' derivation='Avg' name='[avg:temperature_average:qk]' pivot='key' type='quantitative' />
             <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
-            <column-instance column='[temperature_average]' derivation='Sum' name='[sum:temperature_average:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
             <column caption='Temperature Average' datatype='real' name='[temperature_average]' role='measure' type='quantitative' />
-            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.0t56nvb1r301la192q29l14fsxf9].[:Measure Names]'>
-            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t56nvb1r301la192q29l14fsxf9].[sum:temperature_average:qk]&quot;' user:op='manual' />
+          <filter class='categorical' column='[federated.0t56nvb1r301la192q29l14fsxf9].[yr:date:ok]'>
+            <groupfilter from='2010' function='range' level='[yr:date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
-            <column>[federated.0t56nvb1r301la192q29l14fsxf9].[:Measure Names]</column>
+            <column>[federated.0t56nvb1r301la192q29l14fsxf9].[yr:date:ok]</column>
           </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0t56nvb1r301la192q29l14fsxf9].[avg:temperature_average:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
         <panes>
-          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Square' />
             <encodings>
-              <text column='[federated.0t56nvb1r301la192q29l14fsxf9].[sum:temperature_average:qk]' />
+              <color column='[federated.0t56nvb1r301la192q29l14fsxf9].[avg:temperature_average:qk]' />
+              <text column='[federated.0t56nvb1r301la192q29l14fsxf9].[avg:temperature_average:qk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
                 <format attr='mark-labels-show' value='true' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.0t56nvb1r301la192q29l14fsxf9].[Multiple Values]</rows>
-        <cols>[federated.0t56nvb1r301la192q29l14fsxf9].[tyr:date:qk]</cols>
+        <rows />
+        <cols>[federated.0t56nvb1r301la192q29l14fsxf9].[mn:date:ok]</cols>
       </table>
       <simple-id uuid='{345A8E9E-171E-4808-AC30-17E93F70F6AC}' />
     </worksheet>
@@ -379,11 +393,10 @@
     <window class='worksheet' maximized='true' name='Sheet 2'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='283'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
-            <card type='measures' />
           </strip>
         </edge>
         <edge name='top'>
@@ -395,6 +408,11 @@
           </strip>
           <strip size='31'>
             <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='0'>
+            <card pane-specification-id='0' param='[federated.0t56nvb1r301la192q29l14fsxf9].[avg:temperature_average:qk]' type='color' />
           </strip>
         </edge>
       </cards>

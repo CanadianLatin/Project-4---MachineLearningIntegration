@@ -6,6 +6,7 @@ Team Members: Daniel Marquez, Diana Peiran Cao, & Lailah Libay
 
 [Proposal](/project_4_Proposal_V2.pdf)
 
+[TABLEAU PRESENTATION] ()
 
      
 # About the Project
@@ -37,7 +38,9 @@ c. Average Temperature VS Precipitation
 # Files:
 
 * api_data_load.ipynb 
+
     * API call to noaa for DATE, PRCP, TAVG,AWND,TMIN,TMAX [See Variables Dictionary](/Resouces/GSOM_documentation.pdf):
+
     * Using SQLAlchemy and SQLAlchemy-Utils creates in postgress noaa_db and populate table ny_info 
 * api_keys.py
     * noaa token

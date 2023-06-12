@@ -59,6 +59,7 @@ c. Average Temperature VS Precipitation
 ## Powerpoint Presentation
 [Powerpoint]('NOAA Weather Presentation.pptx')
 
+![image](https://github.com/CanadianLatin/Project-4---MachineLearningIntegration/assets/116936533/1cea51b5-2f78-4a46-bdf1-41c4df0b9000)
 
 
 

@@ -6,7 +6,6 @@ Team Members: Daniel Marquez, Diana Peiran Cao, & Lailah Libay
 
 [Proposal](/project_4_Proposal_V2.pdf)
 
-[TABLEAU PRESENTATION] ()
 
      
 # About the Project

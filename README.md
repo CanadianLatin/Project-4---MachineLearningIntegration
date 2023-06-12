@@ -6,12 +6,12 @@ Team Members: Daniel, Diana, Lailah, Zahra
 
 [Proposal](/project_4_Proposal_V2.pdf)
 
+[TABLEAU PRESENTATION] ()
 
 # Files:
 
 * api_data_load.ipynb 
-    * API call to noaa for DATE, PRCP, TAVG,AWND,TMIN,TMAX
-  [See Variables Dictionary] (Resouces/GSOM_documentation.pdf)
+    * API call to noaa for DATE, PRCP, TAVG,AWND,TMIN,TMAX [See Variables Dictionary] (Resouces/GSOM_documentation.pdf)
     * Using SQLAlchemy and SQLAlchemy-Utils creates in postgress noaa_db and populate table ny_info 
 * api_keys.py
     * noaa token

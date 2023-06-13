@@ -47,7 +47,7 @@ c. Average Temperature VS Precipitation
      
 * noaa_apidata_completeJFK.ipynb
         * API call to noaa forthe following variables [See Variables Dictionary](/Resouces/GSOM_documentation.pdf): date,ADPT,ASLP,ASTP,AWBT,AWND,CDSD,CLDD,DP01,DP10,DP1X,DSND,DSNW,DT00,DT32,DX32,DX70,DX90,DYFG,DYHF,DYNT,DYSD,DYSN,DYTS,DYXP,DYXT,EMNT,EMSD,EMSN
-* mlearning_prcp_V4.ipynb (EDA)
+* mlearning_prcp_Final.ipynb (EDA)
     * Machine learning process.
 
 * stations.csv

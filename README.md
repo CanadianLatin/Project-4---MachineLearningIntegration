@@ -57,7 +57,7 @@ c. Average Temperature VS Precipitation
 # Workflow
 
 ## Powerpoint Presentation
-[Powerpoint]('NOAA Weather Presentation.pptx')
+[Powerpoint]('Precipitation Prediction - Presentation.pdf')
 
 
 

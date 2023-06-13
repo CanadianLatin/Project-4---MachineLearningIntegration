@@ -10,7 +10,7 @@ Team Members: Daniel Marquez, Diana Peiran Cao, & Lailah Libay
      
 # About the Project
   Precipitation is essential in sustaining life and affects almost all activities. It can occur in various forms, including rain, snow, sleet, and hail. Rain is the most common type of precipitation. 
-  This project aims to predict precipitation on a monthly basis which will provide useful information for Farmers and agricultural industry, Water resource managers, Urban planners and infrastructure managers, Climate scientists and researchers, Disaster management agencies, and Environmental conservation and ecosystem management.  The tableau dashboard displays the details of monthly precipitation data compared with other  monthly variables as wind, temperature, pressure, fog, & thunderstorms. Prediction model used is linear_model where predictions on monthly precipitations are displayed in an mlearning_prcp_Final.ipynb file.
+  This project aims to predict precipitation on a monthly basis which will provide useful information for Farmers and agricultural industry, Water resource managers, Urban planners and infrastructure managers, Climate scientists and researchers, Disaster management agencies, and Environmental conservation and ecosystem management.  The tableau dashboard displays the details of monthly precipitation data compared with other  monthly variables as wind, temperature, pressure, fog, & thunderstorms. Prediction model used is linear_model where predictions on monthly precipitations are displayed in an [mlearning_prcp](mlearning_prcp_Final.ipynb) file.
 
 # Tableau Presentation
 [Tableau](https://public.tableau.com/app/profile/peiran.cao/viz/NOAAWeather-JFK/Story1)
@@ -47,7 +47,7 @@ c. Average Temperature VS Precipitation
      
 * noaa_apidata_completeJFK.ipynb
         * API call to noaa forthe following variables [See Variables Dictionary](/Resouces/GSOM_documentation.pdf): date,ADPT,ASLP,ASTP,AWBT,AWND,CDSD,CLDD,DP01,DP10,DP1X,DSND,DSNW,DT00,DT32,DX32,DX70,DX90,DYFG,DYHF,DYNT,DYSD,DYSN,DYTS,DYXP,DYXT,EMNT,EMSD,EMSN
-* mlearning_prcp_V4.ipynb (EDA)
+* mlearning_prcp_Final.ipynb (EDA)
     * Machine learning process.
 
 * stations.csv
@@ -57,7 +57,7 @@ c. Average Temperature VS Precipitation
 # Workflow
 
 ## Powerpoint Presentation
-[Powerpoint]('Precipitation Prediction - Presentation.pdf')
+[Powerpoint](Presentation_Precipitation_Prediction.pdf)
 
 
 

@@ -10,7 +10,7 @@ Team Members: Daniel Marquez, Diana Peiran Cao, & Lailah Libay
      
 # About the Project
   Precipitation is essential in sustaining life and affects almost all activities. It can occur in various forms, including rain, snow, sleet, and hail. Rain is the most common type of precipitation. 
-  This project aims to predict precipitation on a monthly basis which will provide useful information for Farmers and agricultural industry, Water resource managers, Urban planners and infrastructure managers, Climate scientists and researchers, Disaster management agencies, and Environmental conservation and ecosystem management.  The tableau dashboard displays the details of monthly precipitation data compared with other  monthly variables as wind, temperature, pressure, fog, & thunderstorms. Prediction model used is linear_model where predictions on monthly precipitations are displayed in an ipynb file.
+  This project aims to predict precipitation on a monthly basis which will provide useful information for Farmers and agricultural industry, Water resource managers, Urban planners and infrastructure managers, Climate scientists and researchers, Disaster management agencies, and Environmental conservation and ecosystem management.  The tableau dashboard displays the details of monthly precipitation data compared with other  monthly variables as wind, temperature, pressure, fog, & thunderstorms. Prediction model used is linear_model where predictions on monthly precipitations are displayed in an mlearning_prcp file.
 
 # Tableau Presentation
 [Tableau](https://public.tableau.com/app/profile/peiran.cao/viz/NOAAWeather-JFK/Story1)
@@ -57,7 +57,7 @@ c. Average Temperature VS Precipitation
 # Workflow
 
 ## Powerpoint Presentation
-[Powerpoint]('Presentation_Precipitation_Prediction.pdf')
+[Powerpoint](Presentation_Precipitation_Prediction.pdf)
 
 
 

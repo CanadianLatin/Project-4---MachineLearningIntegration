@@ -57,7 +57,7 @@ c. Average Temperature VS Precipitation
 # Workflow
 
 ## Powerpoint Presentation
-[Powerpoint]('Precipitation Prediction - Presentation.pdf')
+[Powerpoint]('Presentation_Precipitation_Prediction.pdf')
 
 
 

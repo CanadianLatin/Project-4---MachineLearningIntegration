@@ -84,6 +84,8 @@ From the final cleaned data, dependent and independent variables identified prev
 ## Applying the Prediction Model
 Due to limited time & resources, the prediction model can be applied using reasonably selected variables through [mlearning_prcp](mlearning_prcp_Final.ipynb) file.
 
+![image](https://github.com/CanadianLatin/Project-4---MachineLearningIntegration/assets/116936533/c884ce0c-de53-49ca-9486-83cb39bb0568)
+
 
 ## Conclusion
 
